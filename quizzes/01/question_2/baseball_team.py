@@ -132,14 +132,6 @@ def display_lineup(players: list[Player]) -> None:
             i += 1
     print()    
 
-def get_batting_avg(at_bats: str | int, hits: str | int) -> float:
-    """Get the batting average from given at bats and hits."""
-    try:
-        avg: float = int(hits) / int(at_bats)
-        return round(avg, 3)
-    except ZeroDivisionError:
-        return 0.0
-
 def display_separator():
     """Display a horizontal separator"""
     print("=" * 64)
